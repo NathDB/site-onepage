@@ -1,0 +1,142 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    overflow: hidden;
+  }
+  body {
+    /*background-image: url("../public/images/fond.png");
+    background-repeat: no-repeat;*/
+    background-color: #C4C8CB ;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    position: relative;
+    background: white;
+    margin:5% auto;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .anime-circle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .titre{
+    font-size:350%;
+    font-weight: 700;
+    z-index:4;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    justify-content: flex-end;
+  }
+  .liens{
+    position:absolute;
+    padding: 8%;
+    z-index:4;
+  }
+  .text{
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+  .bouton-circle{
+    width:75px;
+    height:75px;
+    border-radius: 40%;
+    padding:8%;
+    margin-bottom:40%;
+    display:flex;
+    justify-content: space-around;
+  }
+  .fab, .fas{
+    color:white;
+    margin:auto;
+    font-size: 3em;
+  }
+
+  .typed {
+    color:black !important;
+    font-size: 80%;
+  }
+  
+  .typed::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  /*Removes cursor that comes with typed.js*/
+  .typed-cursor{
+    opacity: 0;
+    display: none;
+  }
+
+  /*Custom cursor animation*/
+  @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+
+  @media(max-width:1200px){
+    .wrapper{
+      margin:5% auto;
+      width: 80%;
+      height: 80vh;
+    }
+    .titre{
+      font-size:250%;
+    }
+    
+    
+  }
+  @media(max-width:950px){
+    .wrapper{
+      margin:5% auto;
+    }
+    .titre{
+      font-size:150%;
+    }
+    .liens{
+      margin-top:10%;
+      padding:4%;
+    }
+    .bouton-circle{
+      width:60px;
+      height:60px;
+      padding:2%;
+      margin-bottom:10%;
+    }
+    .fab, .fas{
+      color:white;
+      margin:auto;
+      font-size: 2em;
+    }
+    .text{
+      margin-right:25%;
+    }
+  }
+  
+
+  
